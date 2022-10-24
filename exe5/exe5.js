@@ -92,14 +92,7 @@ document.body.addEventListener('keypress', function(e){
   document.querySelector("section").addEventListener("click", function(){
    
    const parent = document.querySelector("section").lastChild;
-   /*console.log(parent.className);
-   if(parent.className == 'displayedsquare green'){
-    alert("green");
-  }if(parent.className == 'displayedsquare violet'){
-    alert("violet");
-  }if(parent.className == 'displayedsquare orange'){
-    alert("orange");
-  }*/
+ 
   switch (parent.className) {
     case "displayedsquare green":
       alert("green");
