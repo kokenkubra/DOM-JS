@@ -1,11 +1,11 @@
 // task one
 const li = document.body.childNodes[3];
-console.log(li);
+
 
 // task two
 
 const ul = document.querySelector("ul").childNodes;
-console.log(ul);
+
 for(const elem of ul) {
 
    /* for (let index = 0; index < li.childNodes; index++) {
@@ -21,7 +21,7 @@ for(const elem of ul) {
     
     if(elem.nodeType === 1){
          if(elem.textContent == 'Fast and Furious'){
-            console.log(ul);
+            
             console.log(elem);
     // task three        
             li.prepend(elem);
@@ -48,7 +48,7 @@ document.body.addEventListener('keyup', function(e){
 var new_div = document.createElement('div');
 var newnode = document.body.insertBefore(new_div, li);
 
-console.log(newnode);
+
 // task ten
 const new_select = document.createElement('select');
 const optionOne = document.createElement('option');
@@ -60,18 +60,20 @@ optionTwo.appendChild(textTwo);
 new_select.appendChild(optionOne);
 new_select.appendChild(optionTwo);
 new_div.appendChild(new_select);
-console.log(new_div);
 
+// final tasks
 const Showlist = (event) => {
-    const FanF = document.querySelector('.imporant');
-    console.log(FanF);
+    li.style.visibility = 'hidden';
+    const ull = document.querySelector('.important');
+   
     if(event.target.value == 'important franchises'){
      
-     li.style.visibility = 'hidden';
+     ull.style.visibility = 'visible';
      
     }
     if(event.target.value == 'normal franchises'){
         li.style.visibility = 'visible';
+        ull.style.visibility = 'hidden';
     }
  }
 
